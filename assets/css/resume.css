@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+
+:root 
+{
+	--bgMain: #FFFFFF;
+    --primary: #26403D;
+	--secondary: #76A694;
+	--accent: #7BA69E;
+	--text: #425C5C;
+}
+
+/* Reset - Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
+
+	html, body, div, span, applet, object,
+	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+	pre, a, abbr, acronym, address, big, cite,
+	code, del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var, b,
+	u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+	form, label, legend, table, caption, tbody,
+	tfoot, thead, tr, th, td, article, aside,
+	canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby,
+	section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		box-sizing: border-box;  
+	}
+
+	body {
+		font-family: "Lato", sans-serif;
+		background-color: var(--bgMain);
+		color: var(--text);
+		line-height: 1.5em;
+	}
+
+	p, span, li {
+		font-size: 1rem;
+	}
+	p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--primary);
+		font-weight: 500;
+	}
+
+	a:hover {
+		text-decoration:underline;
+	}
+
+	h1, h2, h3 {
+		color: var(--primary);
+	}
+
+	h1 {
+		font-size: 3rem;
+		line-height: 1em;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-block-start: 0.83em;
+		margin-block-end: 0.83em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
+	li {
+		line-height: 1.9em;
+	}
+
+	#container-main {
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 1em;
+	}
+	
+	.section-page {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	
+	#wrapper-hero {
+		display: flex;
+		align-items: center;
+		gap: 4em;
+	}
+	
+	#bio, a {
+		font-weight: 300;
+	}
+	
+	#profile-pic {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	#socials-list ul {
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	#socials-list ul li {
+		background-color: var(--primary);
+		text-align: center;
+		list-style-type: none;
+		border-right: 2px solid var(--accent);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+
+	#socials-list ul li a {
+		font-weight: 300;
+		color: #FFFFFF;
+		font-size: 1.25rem;
+	}
+	#socials-list ul li:last-child {
+		border-right: none;
+	}
+
+	#socials-list ul li:hover,
+	#socials-list ul li:hover a {
+		background-color: var(--accent);
+		color: #000000;
+	}
+	
+	#socials-list a:hover {
+		text-decoration: none;
+	}
+	
+	#qualifications-list {
+		list-style: none;
+	}
+	
+	#wrapper-skill-items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		font-size: 0.9em;
+	}
+	
+	.card-skills {
+		border: 1px solid var(--primary);
+		border-radius: 5px;
+		padding: 0.5em 1em;
+		align-items: center;
+	}
+
+	.card-skills:hover {
+		background-color: var(--accent);
+		color:#000000;
+		border:none;
+	}
+
+	.section-cards {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		padding-left: 2em;
+	}
+
+	#work-history-wrapper ul li {
+		line-height: 1.5em;
+		margin-bottom: 0.5em;
+	}
+
+	#project-highlights ul {
+		list-style-type:"\2714";
+	}
+	
+	.line-break {
+		background-color: var(--primary);
+		height: 1px;
+	}
+	
+	
+	@media(max-width:600px) {
+	
+		.section-page {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
+		#socials-list ul li {
+			padding: 1em;
+		}
+	
+		#wrapper-hero {
+			display: flex;
+			align-items: center;
+			gap: 1em;
+		}
+	
+		#profile-pic {
+			width: 200px;
+			height: 200px;
+		}
+	
+		#wrapper-hero {
+			flex-direction: column;
+		}
+		#wrapper-hero h1 {
+			text-align: center;
+		}
+	
+		.card-work-history {
+			border-left: none;
+			padding-left: 0;
+		}
+	}
+
+	@media(max-width: 480px) {
+
+		#socials-list {
+			text-align:center;
+		}
+
+		#socials-list ul {
+			display: inline-block;
+			text-align: left;
+		}
+
+		#socials-list ul li {
+			text-align: left;
+			border-right: none;
+			border-bottom: 2px solid var(--accent);
+		}
+
+		#socials-list ul li:last-child {
+			border-bottom: none;
+		}
+
+		#profile-pic {
+			width: 125px;
+			height: 125px;
+		}
+	}

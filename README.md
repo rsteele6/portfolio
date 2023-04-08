@@ -1,7 +1,9 @@
 # Credits:
 
-- ✏️ Design:
+- ✏️ Design
+	Both my portfolio and resume sites are based on source code provided by:
 	- HTML5 UP (https://html5up.net)
+	- Dennis Ivanov (https://github.com/divanov11/Digital-Resume)
 
 - 🖼️ Stock Images:
 	- Unsplash (unsplash.com)
