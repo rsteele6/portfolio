@@ -29,7 +29,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -493,10 +494,6 @@ input, select, textarea {
 		}
 		.border {
 			border: 1px solid var(--accent);
-		}
-		#web-portfolio-img {
-			padding-top: 5em;
-			padding-bottom: 5em;
 		}
 		
 		.article-btn {
@@ -2184,11 +2181,6 @@ input, select, textarea {
 			-webkit-object-position: 25% 75%;
 			-ms-object-position: 25% 75%;
 			object-position: 25% 75%;
-		}
-
-		.image img {
-			border-radius: 5px;
-			display: block;
 		}
 
 		.image.left {
