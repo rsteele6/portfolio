@@ -487,6 +487,20 @@ input, select, textarea {
 				}
 		/* custom classes and IDs */
 		
+		.project-wrapper {
+			padding-left: 0 !important;
+		}
+
+		.project-body {
+			margin: 0 auto;
+			margin-top: 0px;
+			margin-right: auto;
+			margin-bottom: 0px;
+			margin-left: auto;
+			max-width: calc(100% - 4.5em);
+			width: 65em;
+		}
+
 		.quote-text {
 			font-size: 1.1rem;
 		}
@@ -586,7 +600,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1680px) {
-
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2949,10 +2963,10 @@ input, select, textarea {
 		color: var(--text);
 		overflow: hidden;
 		padding: 1em 0 1em 0;
+		text-align: center;
 	}
 
 		#footer .copyright {
-			/* line-height: 1em; */
 			list-style: none;
 			padding: 0;
 			margin: 0;
@@ -3131,25 +3145,26 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				height: 44px;
-				right:0;
+				left: 0;
 				position: fixed;
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
-				color: #fff;
+				background: var(--primary);
+				color: #ffffff;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: #ffffff;
 					display: block;
 					font-weight: 700;
 					height: 44px;
 					line-height: 44px;
 					padding: 0 1em;
 					width: 100%;
-					text-align: left;
+
+					text-align: right;
 				}
 
 					#titleBar .title a {
@@ -3165,7 +3180,7 @@ input, select, textarea {
 					width: 6em;
 					border: 0;
 					outline: 0;
-					right: 0;
+					left: 0;
 				}
 
 					#titleBar .toggle:before {
@@ -3182,7 +3197,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: var(--primary);
+						background: var(--secondary);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3193,15 +3208,10 @@ input, select, textarea {
 						text-align: center;
 						top: 0;
 						width: 64px;
-						right: 0;
+						left: 0;
 					}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				/* -moz-transform: translateX(-23em);
-				-webkit-transform: translateX(-23em);
-				-ms-transform: translateX(-23em);
-				transform: translateX(-23em); */
-
 				-moz-transform: translateX(23em);
 				-webkit-transform: translateX(23em);
 				-ms-transform: translateX(23em);
@@ -3354,15 +3364,10 @@ input, select, textarea {
 				}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				/* -moz-transform: translateX(-17em);
-				-webkit-transform: translateX(-17em);
-				-ms-transform: translateX(-17em);
-				transform: translateX(-17em); */
-
 				-moz-transform: translateX(17em);
 				-webkit-transform: translateX(17em);
 				-ms-transform: translateX(17em);
-				transform: translateX(-17em);
+				transform: translateX(17em);
 			}
 
 	}
@@ -3428,5 +3433,8 @@ input, select, textarea {
 			.button {
 				padding: 0;
 			}
-
+			.github {
+				padding: 1.5em;
+				line-height: 0;
+			}
 	}
