@@ -157,3 +157,13 @@
 		});
 
 })(jQuery);
+
+// Dynamically get current year for copyright statement
+
+const copyrightStatement = `
+	<li>
+		&copy; ${new Date().getFullYear()} Rebecca Steele. All rights reserved.
+	</li>
+`;
+
+document.querySelector(".copyright").innerHTML = copyrightStatement;
