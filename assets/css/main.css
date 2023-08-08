@@ -487,6 +487,34 @@ input, select, textarea {
 				}
 		/* custom classes and IDs */
 		
+		.resume {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.description {
+			width: 70%;
+		}
+
+		.dates {
+			font-weight: 700;
+			font-size: 1rem;
+		}
+
+		#experience h4,
+		#education h4  {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		#education .description p {
+			margin-bottom: 0.5em;
+		}
+
+		.resume p {
+			margin-top: 0.5em;
+		}
+
 		.project-wrapper {
 			padding-left: 0 !important;
 		}
