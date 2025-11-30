@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8401],{8506:(o,c,s)=>{s.d(c,{A:()=>k});s(6540);var e=s(1757),p=s(6784),t=s(7107),a=s(7875),f=s(6188);t.Yv.add(a.Cvc,f.X7I);const k={...e.A,FAIcon:p.g}}}]);
